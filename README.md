@@ -7,6 +7,6 @@ demonstrate the language, standard libraries, and tools.
 
 ### [errors](errors/)
 
-    go get github.com/ldsute/go-practice/errors
+    go run github.com/ldsute/go-practice/errors
 
 An example of how to use errors
