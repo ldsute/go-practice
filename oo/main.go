@@ -53,8 +53,28 @@ func test3() {
 	}
 }
 
+// Any value can be passed for parameter type of interface{}
+func printtype(i interface{}) {
+	switch i := i.(type) {
+	case string:
+		fmt.Println(i, "is a string")
+	case int:
+		fmt.Println(i, "is an int")
+	case float64:
+		fmt.Println(i, "is a float64")
+	}
+}
+
+func test4() {
+	fmt.Println("================== Running test3 ==================")
+	printtype(4)
+	printtype("word")
+	printtype(4.0563)
+}
+
 func main() {
 	test1()
 	test2()
 	test3()
+	test4()
 }
