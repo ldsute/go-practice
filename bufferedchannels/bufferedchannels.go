@@ -7,7 +7,6 @@ package main
  *
  * Use "range" to receive values from a channel inside a for loop. Note: range will block until close is called
  * Use "close" to retire a channel
- * test commit!
  */
 
 // Import libraries
